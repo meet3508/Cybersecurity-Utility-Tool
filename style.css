@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to right, #1e1e2f, #2a2a3d);
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Container Box */
+.container {
+    background-color: #2f2f47;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+}
+
+/* Headings */
+h1 {
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+/* Buttons */
+button, .btn {
+    padding: 12px 20px;
+    background-color: #4e54c8;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 10px;
+    width: 100%;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+}
+
+button:hover, .btn:hover {
+    background-color: #6c63ff;
+    transform: translateY(-2px);
+}
+
+/* Inputs */
+input[type="password"],
+input[type="number"] {
+    padding: 10px;
+    width: 100%;
+    margin-top: 8px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    border: none;
+    background: #444;
+    color: #fff;
+}
+
+/* Labels and checkboxes */
+label {
+    display: block;
+    margin: 8px 0;
+    font-size: 15px;
+    text-align: left;
+}
+
+input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+/* Result Display */
+.result {
+    background-color: #1f1f2f;
+    padding: 12px;
+    border-radius: 10px;
+    margin-top: 15px;
+    color: #7CFC00;
+    font-weight: bold;
+    word-break: break-word;
+}
+
+/* Copy Message */
+#copyMessage {
+    margin-top: 8px;
+    font-size: 14px;
+    color: #aaa;
+}
+
+/* Strength Bar */
+.strength-bar {
+    height: 12px;
+    width: 100%;
+    border-radius: 8px;
+    margin-top: 10px;
+    background: #555;
+    overflow: hidden;
+}
+
+.strength-fill {
+    height: 100%;
+    border-radius: 8px;
+    transition: width 0.3s ease;
+}
+
+/* Link */
+a {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    color: #bbb;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #fff;
+}
+
+/* Button Group on Home Page */
+.button-group {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Responsive Layout */
+@media screen and (min-width: 600px) {
+    .button-group {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    button, .btn {
+        width: auto;
+        min-width: 200px;
+    }
+    .strength-bar {
+        height: 12px;
+        width: 100%;
+        border-radius: 8px;
+        margin-top: 10px;
+        background: #555;
+        overflow: hidden;
+    }
+    
+    .strength-fill {
+        height: 100%;
+        width: 0;
+        background-color: #888;
+        transition: width 0.3s ease, background-color 0.3s ease;
+    }
+    
+}
